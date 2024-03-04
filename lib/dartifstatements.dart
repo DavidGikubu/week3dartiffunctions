@@ -5,11 +5,12 @@ void main() {
   stdout.write("Enter a number: ");
   // The input is read from the console using stdin.readLineSync().
   String input = stdin.readLineSync()!;
-  //The input is parsed to an integer using int.parse.
-  int number = int.parse(input);
+
   //The program checks if the number is greater than,
   // less than, or equal to 10 and prints the corresponding message.
   try {
+    //The input is parsed to an integer using int.parse.
+    int number = int.parse(input);
     if (number > 10) {
       print("Your number is greater than 10");
     } else if (number < 10) {
